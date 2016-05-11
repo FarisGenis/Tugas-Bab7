@@ -21,7 +21,6 @@ public class Premium extends Super {
         }
     }
 
-    @Override
     public void Goods(String Goods) {
         if (Goods.equalsIgnoreCase("Pomade")) {
             Price = Pomade;

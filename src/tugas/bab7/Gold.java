@@ -21,7 +21,6 @@ public class Gold extends Super {
         }
     }
 
-    @Override
     public void Goods(String Goods) {
         if (Goods.equalsIgnoreCase("Pomade")) {
             Price = Pomade;
@@ -35,5 +34,4 @@ public class Gold extends Super {
             System.out.println("The goods isn't available");
         }
     }
-
 }

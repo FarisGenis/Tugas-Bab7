@@ -12,7 +12,7 @@ public class Non extends Super {
             Price = CukurRambut;
             Pay = CukurRambut;
             getBill(Service);
-        } else if (Service.equalsIgnoreCase("CukurKumis")){
+        } else if (Service.equalsIgnoreCase("CukurKumis")) {
             Price = CukurKumis;
             Pay = CukurKumis;
             getBill(Service);
@@ -21,15 +21,14 @@ public class Non extends Super {
         }
     }
 
-    @Override
     public void Goods(String Goods) {
         if (Goods.equalsIgnoreCase("Pomade")) {
             Price = Pomade;
-            Pay = Pomade;
+            Pay = (float) (Pomade - (Pomade * 0.1));
             getBill(Goods);
-        } else if (Goods.equalsIgnoreCase("Comb")){
+        } else if (Goods.equalsIgnoreCase("Comb")) {
             Price = Comb;
-            Pay = Comb;
+            Pay = (float) (Comb - (Comb * 0.1));
             getBill(Goods);
         } else {
             System.out.println("The goods isn't available");
