@@ -8,11 +8,31 @@ public class Premium extends Super {
 
     @Override
     public void Service(String Service) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (Service.equalsIgnoreCase("CukurRambut")) {
+            Price = CukurRambut;
+            Pay = (float) (CukurRambut - (CukurRambut * 1.5));
+            getBill();
+        } else if (Service.equalsIgnoreCase("CukurKumis")) {
+            Price = CukurKumis;
+            Pay = (float) (CukurKumis - (CukurKumis * 1.5));
+            getBill();
+        } else {
+            System.out.println("The service isn't available");
+        }
     }
 
     @Override
     public void Goods(String Goods) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (Goods.equalsIgnoreCase("Pomade")) {
+            Price = Pomade;
+            Pay = (float) (Pomade - (Pomade * 0.1));
+            getBill();
+        } else if (Goods.equalsIgnoreCase("Comb")) {
+            Price = Comb;
+            Pay = (float) (Comb - (Comb * 0.1));
+            getBill();
+        } else {
+            System.out.println("The goods isn't available");
+        }
     }
 }

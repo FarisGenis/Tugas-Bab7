@@ -11,14 +11,28 @@ public class Non extends Super {
         if (Service.equalsIgnoreCase("CukurRambut")) {
             Price = CukurRambut;
             Pay = CukurRambut;
+            getBill();
         } else if (Service.equalsIgnoreCase("CukurKumis")){
             Price = CukurKumis;
             Pay = CukurKumis;
+            getBill();
+        } else {
+            System.out.println("The service isn't available");
         }
     }
 
     @Override
     public void Goods(String Goods) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (Goods.equalsIgnoreCase("Pomade")) {
+            Price = Pomade;
+            Pay = Pomade;
+            getBill();
+        } else if (Goods.equalsIgnoreCase("Comb")){
+            Price = Comb;
+            Pay = Comb;
+            getBill();
+        } else {
+            System.out.println("The goods isn't available");
+        }
     }
 }
