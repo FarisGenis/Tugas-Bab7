@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tugas.bab7;
 
-/**
- *
- * @author faris
- */
-public class Silver {
-    
+public class Silver extends Super {
+
+    public Silver(String Name, String Member) {
+        super(Name, Member);
+    }
 }
