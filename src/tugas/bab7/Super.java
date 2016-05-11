@@ -15,11 +15,11 @@ public abstract class Super {
         this.Member = Member;
     }
     
-    public void getBill() {
-            System.out.println("Layanan     : ");
-            System.out.println("Harga Awal  : Rp "+ Price);
-            System.out.println("Discount    : ");
-            System.out.println("Total       : Rp."+ Pay);
+    public void getBill(String SG) {
+            System.out.println("Service/Goods     : " + SG);
+            System.out.println("Price             : " + "Rp" +  Price);
+            System.out.println("Discount          : " + (Price - Pay));
+            System.out.println("Pay               : " + "Rp" +  Pay);
     }
     
     public abstract void Service(String Service);

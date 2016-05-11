@@ -11,11 +11,11 @@ public class Non extends Super {
         if (Service.equalsIgnoreCase("CukurRambut")) {
             Price = CukurRambut;
             Pay = CukurRambut;
-            getBill();
+            getBill(Service);
         } else if (Service.equalsIgnoreCase("CukurKumis")){
             Price = CukurKumis;
             Pay = CukurKumis;
-            getBill();
+            getBill(Service);
         } else {
             System.out.println("The service isn't available");
         }
@@ -26,11 +26,11 @@ public class Non extends Super {
         if (Goods.equalsIgnoreCase("Pomade")) {
             Price = Pomade;
             Pay = Pomade;
-            getBill();
+            getBill(Goods);
         } else if (Goods.equalsIgnoreCase("Comb")){
             Price = Comb;
             Pay = Comb;
-            getBill();
+            getBill(Goods);
         } else {
             System.out.println("The goods isn't available");
         }
