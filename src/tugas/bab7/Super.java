@@ -4,9 +4,9 @@ public abstract class Super {
     
     public String Name, Member;
     public float Pay, Price;
-    public final int CukurRambut = 15000,
-            CukurKumis = 5000,
-            Pomade = 150000,
+    public final int CukurRambut = 20000,
+            CukurKumis = 10000,
+            Pomade = 200000,
             Comb = 45000;
             
 
