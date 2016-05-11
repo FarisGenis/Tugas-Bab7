@@ -2,10 +2,6 @@ package tugas.bab7;
 
 public class Premium extends Super {
 
-    public Premium(String Name, String Member) {
-        super(Name, Member);
-    }
-
     @Override
     public void Service(String Service) {
         if (Service.equalsIgnoreCase("CukurRambut")) {
@@ -21,14 +17,14 @@ public class Premium extends Super {
         }
     }
 
-    public void Goods(String Goods) {
+    public void Goods(String Goods, int Qty) {
         if (Goods.equalsIgnoreCase("Pomade")) {
             Price = Pomade;
-            Pay = (float) (Pomade - (Pomade * 0.1));
+            Pay = (float) ((Pomade * Qty) - (Pomade * 0.1));
             getBill(Goods);
         } else if (Goods.equalsIgnoreCase("Comb")) {
             Price = Comb;
-            Pay = (float) (Comb - (Comb * 0.1));
+            Pay = (float) ((Comb  * Qty) - (Comb * 0.1));
             getBill(Goods);
         } else {
             System.out.println("The goods isn't available");
